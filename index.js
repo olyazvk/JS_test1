@@ -1,53 +1,135 @@
-let string = 'Привет';
-console.log(string);
-
-let number = 123;
-console.log(number);
-
-let flag = true;
-console.log(flag);
-
-let txt = 'true';
-console.log(txt);
-
-
-let a1 = 5 + 3;
-console.log(a1);
-let a2 = 5 - 3;
-console.log(a2)
-let a3 = 5 * 3;
-console.log(a3);
-let a4 = 5 / 3;
-console.log(a4);
-let a5 = 5 % 3;
-console.log(a5);
-
-
-let a6 = 5 % 3;
-console.log(a6);
-let a7 = 3 % 5;
-console.log(a7);
-let a8 ='3' + 5;
-console.log(a8);
-let a9 = '5' - 3;
-console.log(a9);
-let a10 = 75 + 'кг';
-console.log(a10);
-
-let width = 10;
-let height = 23;
-let s = width * height + 'см';
-console.log(s);
-
-let heightC =10;
-let pi = 3.14;
-let dC = 4;
-let v = pi * Math.pow(dC,2) / 4 * heightC + ' м.куб';
-console.log(v);
-
-let n = 3;
-let m = 4;
-let k = Math.sqrt(Math.pow(n, 2) + Math.pow(4, 2));
-console.log(k);
+true + false 
+// выведет 1, потому что 1+0=1
+12 / "6"
+// выведет 2, потому что знак деления
+"number" + 15 + 3
+//  получится 'number153',т.к. все преобразуется в строку
+15 + 3 + "number"
+// получится '18number' 
+[1] > null
+// выведет true, потому что 1 больше чем null
+"foo" + + "bar"
+// выведет 'foonan' потому что унарный плюс преобразовывает значение в число +bar=nan
+'true' == true
+// выведет false потому что сравнивается строка и 1
+false == 'false'
+// выведет false потому что сравнивается строка и 0
+null == ''
+// выведет false потому что null можно сравнивать с null и undefined
+!!"false" == !!"true"
+// выведет true потому что строки заполнены поэтому приеобразуется в 1
+// ['x'] == ‘x’
+// выведет true потому что массив преобразуется в строку
+// [] + null + 1
+// выведет null1 потому что массив преобразуется в строку
+0 || "0" && {}
+// опеатор ||выводит первое true, значит выведет строку.Выведет {} потому что оператор && выводит последнее true
+[1,2,3] == [1,2,3]
+// false потому что это два разных объекта
+!!null
+// выведет false потому что преобразует в булевое значение
+!!undefined
+// выведет false потому что преобразует в булевое значение
 
 
+
+
+// let i = 20;
+
+// while (i) {
+//   alert( i-- );
+// }  выведет 1 потому что 0 остановит цикл
+
+
+
+let x = 39;
+while (x<91) {
+    x++;
+    console.log(x);
+}
+
+
+let a = 11;
+while (a<=340) {
+    if ((a%4)==0){
+    console.log(a);
+}
+     a++;   
+    };
+
+
+for (let i = 100; i>=-5; i--) {
+    console.log(i);
+    
+}    
+    
+
+
+
+let piramid = '';
+for (let i = 15; i >=0; i--) {
+    piramid = piramid + 'y';
+    console.log(piramid);
+    
+}
+
+
+
+
+for (let i = 0; i<=100; i+=2) {
+    console.log(i);
+    
+}
+
+let z = 0;
+for (let i = 0; i<=100; i++) {
+    z += i;
+    
+}
+console.log(z);
+
+
+
+let c = '';
+for (let i = 1; i <= 11; i++) {
+    if ((i%2) !== 0)
+    {
+     c = c + ' ' + i;
+    }
+}
+    console.log(c);
+
+
+
+
+    let p = '';
+    for (let i = 123; i >=118; i--) 
+        {
+         p = p + '-' + i;
+        }
+    
+        console.log(p);    
+
+
+
+
+        let q = '-';
+    for (let i = 1; i<=9; i++) 
+        {
+         q = q + i + '-';
+        }
+    
+        console.log(q);
+
+
+
+
+let data1 = prompt("Введите число", "");
+let data2 = prompt("Введите число", "");
+data1 == data2 ? console.log('все хорошо') : console.log('числа не равны');
+
+
+
+let data3 = +prompt("Введите число", "");
+let data4 = +prompt("Введите число", "");
+data3 + data4 > 10 ? console.log('все хорошо') : console.log('сумма не больше 10');
